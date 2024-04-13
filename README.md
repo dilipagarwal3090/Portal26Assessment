@@ -41,12 +41,12 @@ At present this system supports two API's:
     }
     ```
   * Response:
-  ```
-  {
-    status: 200,
-    body: success
-  }
-  ```
+    ```
+    {
+      status: 200,
+      body: success
+    }
+    ```
 ### Query Event API 
   * Endpoint: POST https://zdrla73dj1.execute-api.eu-west-1.amazonaws.com/prod/v1/{tenant_name}/query
   * Request:
@@ -59,23 +59,23 @@ At present this system supports two API's:
     }
     ```
   * Response:
-  ```
-  {
-    status: 200,
-    body: [
-            {
-                "event_timestamp": "2024-01-11T01:42:50.234200+00:00",
-                "user_id": "johndoe",
-                "body": "what is the capital of India?"
-            },
-            {
-                "event_timestamp": "2024-01-11T01:42:50.234200+00:00",
-                "user_id": "johndoe",
-                "body": "what is the capital of India?"
-            },
-        ]
-  }
-  ```
+    ```
+    {
+      status: 200,
+      body: [
+              {
+                  "event_timestamp": "2024-01-11T01:42:50.234200+00:00",
+                  "user_id": "johndoe",
+                  "body": "what is the capital of India?"
+              },
+              {
+                  "event_timestamp": "2024-01-11T01:42:50.234200+00:00",
+                  "user_id": "johndoe",
+                  "body": "what is the capital of India?"
+              },
+          ]
+    }
+    ```
 * We can filter out the data using userId, domain that means request with or without userId and domain will also work.
 
 # Steps to deploy this project
